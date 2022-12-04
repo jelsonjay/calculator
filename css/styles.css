@@ -32,7 +32,7 @@
 	/*----GENERAL---*/
 	--border-radius: 0.5rem;
 	--padding: 1rem;
-	--hover: #745174;
+	--hover: hsl(300, 94%, 47%);
 	--transition: all 0.3s linear;
 }
 
@@ -41,11 +41,11 @@ body {
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.6;
 	background: var(--bg);
-	transition: all 0.3s linear;
+	transition: var(--transition);
 }
 
 h1 {
-	color: #eee;
+	color: var(--clr-white);
 	padding: 1rem;
 	text-align: center;
 	margin-top: 2rem;
@@ -58,8 +58,8 @@ main {
 	flex-direction: column;
 	padding: var(--padding);
 	margin: 0 auto;
-	max-width: 100%;
-	width: 70rem;
+	width: 100%;
+	max-width: 70rem;
 	margin-top: 1rem;
 	border-radius: var(--border-radius);
 	min-height: 50vh;
@@ -112,7 +112,7 @@ button:hover {
 	padding: 0.625rem;
 }
 .equal {
-	grid-column: span 2;
+	grid-column: span 3;
 	background-color: var(--equal);
 }
 /*==========MEDIA QUERY=========*/
