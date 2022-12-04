@@ -5,6 +5,7 @@ const btnOperators = [...document.querySelectorAll('.operator')];
 const result = document.querySelector('.result');
 const btnOn = document.querySelector('.on');
 const btnClear = document.querySelector('.clear');
+const btnCopy = document.querySelector('.copy');
 
 let value = false;
 let clearDecimal = false;
@@ -60,6 +61,10 @@ result.addEventListener('click', () => {
 	clearDecimal = false;
 	const res = eval(screen.innerHTML);
 	screen.innerHTML = res;
+});
+
+btnCopy.addEventListener('click', e => {
+	navigator.clipboard.writeText(screen.innerHTML);
 });
 
 //console.log(allNumbers);
