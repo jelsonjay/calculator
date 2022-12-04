@@ -98,7 +98,7 @@ button:hover {
 	padding: 1rem;
 }
 
-.box-calculator input {
+.box-calculator label {
 	grid-column: span 4;
 	height: 3rem;
 	width: 21.125rem;
@@ -106,7 +106,7 @@ button:hover {
 	box-shadow: inset -0.5rem 0.5rem 0.625rem #eee,
 		inset 0.5rem 0.5rem 0.625rem #eee, rgba(0, 0, 0, alpha);
 	background-color: #fff;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	text-align: start;
 	margin: 2.5rem 0 1.875rem 0;
 	padding: 0.625rem;
