@@ -15,11 +15,12 @@
 	/*---COLOR---*/
 	--primary: #135592;
 	--clr-white: #fff;
+	--clr-gray: #eee;
 	--bg: linear-gradient(
 		90deg,
 		rgb(0, 36, 6) 0%,
 		rgb(68, 146, 100) 0%,
-		rgb(70, 99, 105) 100%
+		rgb(58, 196, 223) 100%
 	);
 
 	--resetColor: #adabab;
@@ -86,14 +87,14 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #eee;
+	background-color: var(--clr-gray);
 	border-radius: var(--border-radius);
 }
 .box-calculator {
 	display: grid;
 	grid-template-columns: repeat(4);
-	box-shadow: 0.2rem 0.1rem 0.1rem 0.2rem #eee, 0.1rem 0.1rem 0.1rem 0.2rem #eee,
-		0.2rem 0.1rem 0.2rem #eee;
+	box-shadow: 0.2rem 0.1rem 0.1rem 0.2rem var(--clr-gray),
+		0.1rem 0.1rem 0.1rem 0.2rem #eee, 0.2rem 0.1rem 0.2rem var(--clr-gray);
 	border-radius: var(--border-radius);
 	padding: 1rem;
 }
@@ -103,9 +104,9 @@ button:hover {
 	height: 3rem;
 	width: 21.125rem;
 	border-radius: var(--border-radius);
-	box-shadow: inset -0.5rem 0.5rem 0.625rem #eee,
-		inset 0.5rem 0.5rem 0.625rem #eee, rgba(0, 0, 0, alpha);
-	background-color: #fff;
+	box-shadow: inset -0.5rem 0.5rem 0.625rem var(--clr-gray),
+		inset 0.5rem 0.5rem 0.625rem var(--clr-gray), rgba(0, 0, 0, alpha);
+	background-color: var(--clr-white);
 	font-size: 1.5rem;
 	text-align: start;
 	margin: 2.5rem 0 1.875rem 0;

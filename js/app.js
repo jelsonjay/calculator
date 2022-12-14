@@ -63,7 +63,7 @@ result.addEventListener('click', () => {
 	screen.innerHTML = res;
 });
 
-btnCopy.addEventListener('click', e => {
+btnCopy.addEventListener('click', () => {
 	navigator.clipboard.writeText(screen.innerHTML);
 });
 
